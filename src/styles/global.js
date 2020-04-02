@@ -11,7 +11,7 @@ export default createGlobalStyle`
   }
 
   body {
-    background: #01354D url(${background}) no-repeat center top;
+    background: #01354D ;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -24,8 +24,6 @@ export default createGlobalStyle`
   }
 
   #root{
-    max-width: 90vh;
     margin: 0 auto;
-    padding: 0 20px;
   }
 `;
