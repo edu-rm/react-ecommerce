@@ -39,13 +39,12 @@ export const ProductList = styled.ul`
     align-items: center;
     color: white;
     font-weight: bold;
-    background: linear-gradient(to right, #588be5, #38cddd);
+    background: linear-gradient(to left, #588be5, #38cddd);
     /* padding: 8px 8px; */
     border: none;
     border-radius: 6px;
     margin-top: 15px;
-    transition: 3s all;
-    box-shadow: 0px 2px 9px 3px #588be5;
+    transition: all 0.1s;
 
     div {
       background: rgba(0, 0, 0, 0.2);
@@ -56,7 +55,6 @@ export const ProductList = styled.ul`
     }
   }
   button:hover {
-    background: linear-gradient(to left, #588be5, #38cddd);
-    transition-delay: 3s;
+    box-shadow: 0px 0px 5px 1px #38cddd;
   }
 `;
