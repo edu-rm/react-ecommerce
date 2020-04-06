@@ -1,0 +1,66 @@
+{
+  "stock": [
+    {
+      "id": 1,
+      "amount": 5
+    },
+    {
+      "id": 2,
+      "amount": 5
+    },
+    {
+      "id": 3,
+      "amount": 5
+    },
+    {
+      "id": 4,
+      "amount": 5
+    },
+    {
+      "id": 5,
+      "amount": 5
+    },
+    {
+      "id": 6,
+      "amount": 5
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Pub G",
+      "price": 37,
+      "image": "https://w4.ezcdn.com.br/gcmgames/fotos/pequena/102347fp1/pubg-mobile-unknown-cash-600-90-uc.jpg"
+    },
+    {
+      "id": 2,
+      "title": "STEAM CARTÃO PRÉ-PAGO",
+      "price": 200,
+      "image": "https://w4.ezcdn.com.br/gcmgames/fotos/pequena/89518fp1/steam-cartao-pre-pago-r-200-reais.jpg"
+    },
+    {
+      "id": 3,
+      "title": "CARTÃO PLAYSTATION PSN PLUS 12 MESES BRASIL",
+      "price": 149,
+      "image": "https://w1.ezcdn.com.br/gcmgames/fotos/pequena/501fp1/cartao-playstation-psn-plus-12-meses-brasil.jpg"
+    },
+    {
+      "id": 4,
+      "title": "CARTÃO APPLE STORE ITUNES GIFT CARD",
+      "price": 50,
+      "image": "https://w3.ezcdn.com.br/gcmgames/fotos/pequena/91455fp1/cartao-apple-store-itunes-gift-card-r-50-reais.jpg"
+    },
+    {
+      "id": 5,
+      "title": "CARTÃO PLAYSTATION PSN",
+      "price": 249,
+      "image": "https://w2.ezcdn.com.br/gcmgames/fotos/pequena/22fp1/cartao-playstation-psn-r-250-reais-brasil.jpg"
+    },
+    {
+      "id": 6,
+      "title": "CARTÃO SPOTIFY R$50 REAIS",
+      "price": 49.99,
+      "image": "https://w2.ezcdn.com.br/gcmgames/fotos/pequena/2454fp1/cartao-spotify-r-50-reais.jpg"
+    }
+  ]
+}
