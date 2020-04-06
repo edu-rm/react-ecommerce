@@ -1,60 +1,50 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import { MdAddShoppingCart } from 'react-icons/md';
+import { formatPrice } from '../../util/format';
+import api from '../../services/api';
 
 import { ProductList } from './styles';
 
-export default function Home() {
-  return (
-    <ProductList>
-      <li>
-        <img
-          src="https://w4.ezcdn.com.br/gcmgames/fotos/pequena/102347fp1/pubg-mobile-unknown-cash-600-90-uc.jpg"
-          alt="product"
-        />
-        <strong>pubg mobile</strong>
-        <span>R$ 15,00</span>
+class Home extends Component {
+  state = {
+    products: [],
+  };
 
-        <button type="button">
-          <div>
-            <MdAddShoppingCart size={20} color="#fff" /> 3
-          </div>
+  async componentDidMount() {
+    const response = await api.get('/products');
 
-          <span>ADD TO CART</span>
-        </button>
-      </li>
-      <li>
-        <img
-          src="https://w4.ezcdn.com.br/gcmgames/fotos/pequena/102347fp1/pubg-mobile-unknown-cash-600-90-uc.jpg"
-          alt="product"
-        />
-        <strong>pubg mobile</strong>
-        <span>R$ 15,00</span>
+    const data = response.data.map((product) => ({
+      ...product,
+      priceFormated: formatPrice(product.price),
+    }));
 
-        <button type="button">
-          <div>
-            <MdAddShoppingCart size={20} color="#fff" /> 3
-          </div>
+    this.setState({ products: data });
+  }
 
-          <span>ADD TO CART</span>
-        </button>
-      </li>
-      <li>
-        <img
-          src="https://w4.ezcdn.com.br/gcmgames/fotos/pequena/102347fp1/pubg-mobile-unknown-cash-600-90-uc.jpg"
-          alt="product"
-        />
-        <strong>pubg mobile</strong>
-        <span>R$ 15,00</span>
+  render() {
+    const { products } = this.state;
 
-        <button type="button">
-          <div>
-            <MdAddShoppingCart size={20} color="#fff" /> 3
-          </div>
+    return (
+      <ProductList>
+        {products.map((product) => (
+          <li key={product.id}>
+            <img src={product.image} alt={product.title} />
+            <strong>{product.title}</strong>
+            <span id="price">{product.priceFormated}</span>
 
-          <span>ADD TO CART</span>
-        </button>
-      </li>
-    </ProductList>
-  );
+            <button type="button">
+              <div>
+                <MdAddShoppingCart size={20} color="#fff" /> 3
+              </div>
+
+              <span>ADD TO CART</span>
+            </button>
+          </li>
+        ))}
+      </ProductList>
+    );
+  }
 }
+
+export default Home;

@@ -10,28 +10,30 @@ export const ProductList = styled.ul`
   text-align: center;
 
   li {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
     width: 250px;
-    max-height: 900px;
+    max-height: 400px;
 
     background-color: #f9f9f9;
-    padding: 30px 40px;
+    padding: 20px 25px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
     img {
       width: 100%;
       margin-bottom: 10px;
     }
+
+    #price {
+      font-size: 20px;
+      align-self: end;
+      font-weight: bold;
+    }
   }
 
   strong {
     text-transform: uppercase;
-    font-size: 16px;
-  }
-  span {
     font-size: 12px;
-    margin: 0 auto;
   }
 
   button {
@@ -45,6 +47,11 @@ export const ProductList = styled.ul`
     border-radius: 6px;
     margin-top: 15px;
     transition: all 0.1s;
+
+    span {
+      font-size: 12px;
+      margin: 0 auto;
+    }
 
     div {
       background: rgba(0, 0, 0, 0.2);
