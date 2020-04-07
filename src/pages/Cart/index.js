@@ -13,7 +13,7 @@ import { formatPrice } from '../../util/format';
 
 import { Container, ProductTable, Total } from './styles';
 
-function Cart({ cart, removeFromCart, updateAmount }) {
+function Cart({ cart, removeFromCart, updateAmount, total }) {
   function increment(product) {
     updateAmount(product.id, product.amount + 1);
   }
@@ -75,7 +75,7 @@ function Cart({ cart, removeFromCart, updateAmount }) {
 
         <Total>
           <span>TOTAL</span>
-          <strong>R$1440,00</strong>
+          <strong>{total}</strong>
         </Total>
       </footer>
     </Container>
@@ -86,7 +86,12 @@ const mapStateToProps = (state) => ({
   cart: state.cart.map((product) => ({
     ...product,
     subtotal: formatPrice(product.price * product.amount),
-  })), // reducer de carrinho
+  })),
+  total: formatPrice(
+    state.cart.reduce((total, product) => {
+      return total + product.price * product.amount;
+    }, 0)
+  ),
 });
 
 const mapDispatchToProps = (dispatch) =>
