@@ -44,7 +44,7 @@ function Cart({ cart }) {
                 </div>
               </td>
               <td>
-                <strong>R$23423</strong>
+                <strong>{product.priceFormatted}</strong>
               </td>
               <td>
                 <button type="button">
