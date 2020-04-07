@@ -40,7 +40,7 @@ class Home extends Component {
           <li key={product.id}>
             <img src={product.image} alt={product.title} />
             <strong>{product.title}</strong>
-            <span id="price">{product.priceFormated}</span>
+            <span id="price">{product.priceFormatted}</span>
 
             <button
               type="button"

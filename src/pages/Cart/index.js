@@ -30,7 +30,7 @@ function Cart({ cart }) {
               </td>
               <td>
                 <strong>{product.title}</strong>
-                <span>{product.priceFormated}</span>
+                <span>{product.priceFormatTed}</span>
               </td>
               <td>
                 <div>
