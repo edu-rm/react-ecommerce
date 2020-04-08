@@ -1,30 +1,4 @@
 {
-  "stock": [
-    {
-      "id": 1,
-      "amount": 5
-    },
-    {
-      "id": 2,
-      "amount": 5
-    },
-    {
-      "id": 3,
-      "amount": 5
-    },
-    {
-      "id": 4,
-      "amount": 5
-    },
-    {
-      "id": 5,
-      "amount": 5
-    },
-    {
-      "id": 6,
-      "amount": 5
-    }
-  ],
   "products": [
     {
       "id": 1,
@@ -61,6 +35,32 @@
       "title": "CARTÃO SPOTIFY R$50 REAIS",
       "price": 49.99,
       "image": "https://w2.ezcdn.com.br/gcmgames/fotos/pequena/2454fp1/cartao-spotify-r-50-reais.jpg"
+    }
+  ],
+  "stock": [
+    {
+      "id": 1,
+      "amount": 5
+    },
+    {
+      "id": 2,
+      "amount": 5
+    },
+    {
+      "id": 3,
+      "amount": 5
+    },
+    {
+      "id": 4,
+      "amount": 5
+    },
+    {
+      "id": 5,
+      "amount": 5
+    },
+    {
+      "id": 6,
+      "amount": 5
     }
   ]
 }
