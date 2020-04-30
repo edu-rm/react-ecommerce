@@ -40,7 +40,7 @@
   "stock": [
     {
       "id": 1,
-      "amount": 5
+      "amount": 3
     },
     {
       "id": 2,
@@ -48,11 +48,11 @@
     },
     {
       "id": 3,
-      "amount": 5
+      "amount": 2
     },
     {
       "id": 4,
-      "amount": 5
+      "amount": 1
     },
     {
       "id": 5,
@@ -60,7 +60,7 @@
     },
     {
       "id": 6,
-      "amount": 5
+      "amount": 10
     }
   ]
 }
